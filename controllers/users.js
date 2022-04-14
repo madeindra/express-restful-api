@@ -3,6 +3,7 @@ const uuid = require('uuid').v4;
 
 // import data statis
 let users = require('../db/users.json');
+let notifications = require('../db/notifications.json');
 
 // ambil 1 data
 const getSingleData = (req, res) => {
@@ -224,6 +225,26 @@ const deleteData = (req, res) => {
   });
 };
 
+// ambil semua notification milik 1 user
+const getUsersNotification = (req, res) => {
+  // ambil path parameter
+  const id = req.params.id;
+
+  // salin array
+  let results = [...notifications];
+
+  // cari berdasar user_id
+  results = results.filter((item) => {
+    return item.user_id === id;
+  });
+
+  // selalu berikan response 200 meskipun results kosong
+  return res.status(200).json({
+    message: 'Operation succesful',
+    data: results,
+  });
+}
+
 module.exports = {
   getSingleData,
   getAllData,
@@ -231,4 +252,5 @@ module.exports = {
   putData,
   patchData,
   deleteData,
+  getUsersNotification,
 }

@@ -4,6 +4,8 @@ const router = require('express').Router()
 // import controller
 const users = require('../controllers/users');
 
+router.get('/api/v1/users/:id/notifications', users.getUsersNotification);
+
 router.get('/api/v1/users/:id', users.getSingleData);
 
 router.put('/api/v1/users/:id', users.putData);
