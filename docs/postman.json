@@ -1,0 +1,790 @@
+{
+	"info": {
+		"_postman_id": "91836338-5d1e-445c-90c1-7f3d0043da19",
+		"name": "RESTful API Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Users v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All User v1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5202"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1452-T4ajP+cSxkyY2yoYRCI3wUm9HBU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:32:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\",\n    \"data\": [\n        {\n            \"id\": \"a8f32405-b477-4456-ad54-ed9947af006f\",\n            \"name\": \"Allison Holland\",\n            \"email\": \"allisonholland@emtrak.com\"\n        },\n        {\n            \"id\": \"e4a4de90-f520-46d6-9406-02d500b14340\",\n            \"name\": \"Franklin Avila\",\n            \"email\": \"franklinavila@emtrak.com\"\n        },\n        {\n            \"id\": \"3928dbc2-1040-4e06-8e11-9dd312dbdc42\",\n            \"name\": \"Molina Travis\",\n            \"email\": \"molinatravis@emtrak.com\"\n        },\n        {\n            \"id\": \"86ee167e-fc87-4d7c-9e46-45af1003f4b9\",\n            \"name\": \"Lynn Fischer\",\n            \"email\": \"lynnfischer@emtrak.com\"\n        },\n        {\n            \"id\": \"f6ab91da-1303-4089-aacb-b05bfd0bdc0b\",\n            \"name\": \"Stein Ferguson\",\n            \"email\": \"steinferguson@emtrak.com\"\n        },\n        {\n            \"id\": \"7428fb74-0911-4075-8ef1-250339036112\",\n            \"name\": \"Monica Valdez\",\n            \"email\": \"monicavaldez@emtrak.com\"\n        },\n        {\n            \"id\": \"7d444dcd-cb24-4027-a44b-107e96cd7bc6\",\n            \"name\": \"Bauer Dotson\",\n            \"email\": \"bauerdotson@emtrak.com\"\n        },\n        {\n            \"id\": \"20110861-0690-495f-8dc5-ea2befb26fd2\",\n            \"name\": \"Simone Burns\",\n            \"email\": \"simoneburns@emtrak.com\"\n        },\n        {\n            \"id\": \"ce64cb03-cf34-4d94-8d7f-5f322c7b49dc\",\n            \"name\": \"Day Roman\",\n            \"email\": \"dayroman@emtrak.com\"\n        },\n        {\n            \"id\": \"b987b75a-09b7-4528-ae9f-3b274debac25\",\n            \"name\": \"Howe Downs\",\n            \"email\": \"howedowns@emtrak.com\"\n        },\n        {\n            \"id\": \"b9a81be4-e106-4c53-82e9-fca217ffcb26\",\n            \"name\": \"Cain Pierce\",\n            \"email\": \"cainpierce@emtrak.com\"\n        },\n        {\n            \"id\": \"ed6c81aa-7777-4668-b0b5-8260aa87e7c0\",\n            \"name\": \"Maddox Fitzgerald\",\n            \"email\": \"maddoxfitzgerald@emtrak.com\"\n        },\n        {\n            \"id\": \"be24b301-1c2b-4484-8253-05782b25634b\",\n            \"name\": \"Blanchard Greer\",\n            \"email\": \"blanchardgreer@emtrak.com\"\n        },\n        {\n            \"id\": \"a08f27de-6688-4d26-ae44-c14437246de9\",\n            \"name\": \"Michael Gray\",\n            \"email\": \"michaelgray@emtrak.com\"\n        },\n        {\n            \"id\": \"0c28a128-d809-4084-adbd-feb027a4a9fd\",\n            \"name\": \"Lawrence Farmer\",\n            \"email\": \"lawrencefarmer@emtrak.com\"\n        },\n        {\n            \"id\": \"ec6e23eb-673b-45d2-b87a-8cd8aadc08d0\",\n            \"name\": \"Stokes Wynn\",\n            \"email\": \"stokeswynn@emtrak.com\"\n        },\n        {\n            \"id\": \"614c081c-fd13-4557-a4a2-a3feab722c1f\",\n            \"name\": \"Angelina Browning\",\n            \"email\": \"angelinabrowning@emtrak.com\"\n        },\n        {\n            \"id\": \"a18b75cb-9aaa-4107-854f-eaa5c82d16d3\",\n            \"name\": \"Walter Jackson\",\n            \"email\": \"walterjackson@emtrak.com\"\n        },\n        {\n            \"id\": \"b78a7af3-3e35-43b7-a7a9-4bc115b45b4d\",\n            \"name\": \"Nadia Ellis\",\n            \"email\": \"nadiaellis@emtrak.com\"\n        },\n        {\n            \"id\": \"5de3f961-030b-42ce-8bec-6569194dcf4f\",\n            \"name\": \"Michael Stanton\",\n            \"email\": \"michaelstanton@emtrak.com\"\n        },\n        {\n            \"id\": \"6a62ed31-0879-4031-a5d9-88cc18c30aa2\",\n            \"name\": \"Dee Puckett\",\n            \"email\": \"deepuckett@emtrak.com\"\n        },\n        {\n            \"id\": \"88439384-88ae-4c6a-8d30-e0d52d34c5a9\",\n            \"name\": \"Tyson Battle\",\n            \"email\": \"tysonbattle@emtrak.com\"\n        },\n        {\n            \"id\": \"5d65b05e-a339-434a-af6d-8e8f88efd29b\",\n            \"name\": \"Annmarie Woodward\",\n            \"email\": \"annmariewoodward@emtrak.com\"\n        },\n        {\n            \"id\": \"a2658e19-25ff-4ad8-b9cb-e5461a49b725\",\n            \"name\": \"Candace Stokes\",\n            \"email\": \"candacestokes@emtrak.com\"\n        },\n        {\n            \"id\": \"49067662-9572-4b80-9c47-b323f81640e8\",\n            \"name\": \"Selena Dennis\",\n            \"email\": \"selenadennis@emtrak.com\"\n        },\n        {\n            \"id\": \"50cc5e01-95b8-4ce6-9178-c0f85eeb145b\",\n            \"name\": \"June Bradley\",\n            \"email\": \"junebradley@emtrak.com\"\n        },\n        {\n            \"id\": \"a1d07494-0ae8-415c-be44-7c8bcc06ff5a\",\n            \"name\": \"Bette Romero\",\n            \"email\": \"betteromero@emtrak.com\"\n        },\n        {\n            \"id\": \"8ac0cdb0-39a4-40d0-92a0-11f69890feab\",\n            \"name\": \"Janis Fulton\",\n            \"email\": \"janisfulton@emtrak.com\"\n        },\n        {\n            \"id\": \"390d50ed-5fe3-422b-a9b3-b3d6e78718a8\",\n            \"name\": \"Maryanne Rosales\",\n            \"email\": \"maryannerosales@emtrak.com\"\n        },\n        {\n            \"id\": \"b21ab588-a821-43f6-b1b4-4f2500578136\",\n            \"name\": \"Guy Meadows\",\n            \"email\": \"guymeadows@emtrak.com\"\n        },\n        {\n            \"id\": \"8ccfb7fd-d1ce-4c6c-b9a1-3737628e37f5\",\n            \"name\": \"Ingram Becker\",\n            \"email\": \"ingrambecker@emtrak.com\"\n        },\n        {\n            \"id\": \"89e214ba-d482-4b12-bddb-134a3093a7b0\",\n            \"name\": \"Melba Hebert\",\n            \"email\": \"melbahebert@emtrak.com\"\n        },\n        {\n            \"id\": \"5dc1a990-517a-4a87-8e5a-8945d7a2d261\",\n            \"name\": \"Salas Mathis\",\n            \"email\": \"salasmathis@emtrak.com\"\n        },\n        {\n            \"id\": \"275f2751-6a0e-4c74-9539-ee8656a58a0d\",\n            \"name\": \"Bender Byrd\",\n            \"email\": \"benderbyrd@emtrak.com\"\n        },\n        {\n            \"id\": \"3291d99e-4bca-4ebf-8aeb-f76faac0b778\",\n            \"name\": \"Maritza Guerrero\",\n            \"email\": \"maritzaguerrero@emtrak.com\"\n        },\n        {\n            \"id\": \"cd7b1b43-c917-4b3b-99f6-a901df2049ee\",\n            \"name\": \"Goff Allen\",\n            \"email\": \"goffallen@emtrak.com\"\n        },\n        {\n            \"id\": \"a6fe24e6-e508-4b28-a1a9-48729513a8f3\",\n            \"name\": \"Johnnie Gay\",\n            \"email\": \"johnniegay@emtrak.com\"\n        },\n        {\n            \"id\": \"d52b3eba-972b-4d6a-9322-477bdd700655\",\n            \"name\": \"Leigh Ratliff\",\n            \"email\": \"leighratliff@emtrak.com\"\n        },\n        {\n            \"id\": \"24e7886b-55a7-4d63-80e5-35c3da757a33\",\n            \"name\": \"Jenifer Lara\",\n            \"email\": \"jeniferlara@emtrak.com\"\n        },\n        {\n            \"id\": \"db75c5ff-1117-4f42-a2c7-9132415820cd\",\n            \"name\": \"Nona Mcintyre\",\n            \"email\": \"nonamcintyre@emtrak.com\"\n        },\n        {\n            \"id\": \"9d5cfa2b-7c78-4f46-a8e3-86bce956124b\",\n            \"name\": \"Sullivan Francis\",\n            \"email\": \"sullivanfrancis@emtrak.com\"\n        },\n        {\n            \"id\": \"141d0104-e8b5-4773-b0e6-b8fab422dad4\",\n            \"name\": \"James Stanley\",\n            \"email\": \"jamesstanley@emtrak.com\"\n        },\n        {\n            \"id\": \"79e20f21-04e4-43b5-959c-9c9dcdde79ba\",\n            \"name\": \"Hazel Heath\",\n            \"email\": \"hazelheath@emtrak.com\"\n        },\n        {\n            \"id\": \"e37315c3-39cd-4f8c-a449-47b5a591574f\",\n            \"name\": \"Deana Casey\",\n            \"email\": \"deanacasey@emtrak.com\"\n        },\n        {\n            \"id\": \"0d5dfbfe-3dab-4d7c-9803-050d6161bbfc\",\n            \"name\": \"Moran Garcia\",\n            \"email\": \"morangarcia@emtrak.com\"\n        },\n        {\n            \"id\": \"7891d446-aa7e-4ce0-8372-a8c7621f3831\",\n            \"name\": \"Schneider Schultz\",\n            \"email\": \"schneiderschultz@emtrak.com\"\n        },\n        {\n            \"id\": \"ee7400da-e974-46d7-a4eb-fa5bf5f51ae6\",\n            \"name\": \"Annabelle Sanchez\",\n            \"email\": \"annabellesanchez@emtrak.com\"\n        },\n        {\n            \"id\": \"068ee609-a22e-425c-8b4a-65a2814d4325\",\n            \"name\": \"Imogene Petty\",\n            \"email\": \"imogenepetty@emtrak.com\"\n        },\n        {\n            \"id\": \"4bf65bf8-3ec2-4120-9907-a2136000e8ed\",\n            \"name\": \"Bullock Buckner\",\n            \"email\": \"bullockbuckner@emtrak.com\"\n        },\n        {\n            \"id\": \"4a8e0a30-1671-4275-a87f-e5d83625e93a\",\n            \"name\": \"Ratliff Allison\",\n            \"email\": \"ratliffallison@emtrak.com\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "All Users v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v2/users?name=Allison&email=allisonholland@emtrak.com&page=1&limit=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Allison"
+						},
+						{
+							"key": "email",
+							"value": "allisonholland@emtrak.com"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All User v2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v2/users?name=Allison&email=allisonholland@emtrak.com&page=1&limit=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v2",
+								"users"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Allison"
+								},
+								{
+									"key": "email",
+									"value": "allisonholland@emtrak.com"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "180"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b4-8Bp5o2V5iIBwrG+0jNrfxUQZUM8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:35:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\",\n    \"data\": [\n        {\n            \"id\": \"a8f32405-b477-4456-ad54-ed9947af006f\",\n            \"name\": \"Allison Holland\",\n            \"email\": \"allisonholland@emtrak.com\"\n        }\n    ],\n    \"page\": \"1\",\n    \"size\": 1,\n    \"total\": 50\n}"
+				}
+			]
+		},
+		{
+			"name": "Single User v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "a8f32405-b477-4456-ad54-ed9947af006f"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single User v1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "a8f32405-b477-4456-ad54-ed9947af006f"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "147"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"93-zREY0L3q2eVtcwquoVyw4bMKNTA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:36:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\",\n    \"data\": {\n        \"id\": \"a8f32405-b477-4456-ad54-ed9947af006f\",\n        \"name\": \"Allison Holland\",\n        \"email\": \"allisonholland@emtrak.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Single User's Notification v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/users/:id/notifications",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						":id",
+						"notifications"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "a8f32405-b477-4456-ad54-ed9947af006f"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single User's Notification v1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/:id/notifications",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id",
+								"notifications"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "a8f32405-b477-4456-ad54-ed9947af006f"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "337"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"151-UESRyZUSpNRT9BnvSH2llb/EA+k\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:38:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\",\n    \"data\": [\n        {\n            \"id\": \"75e1c552-58d5-41e4-abcc-5ee6d674c26b\",\n            \"user_id\": \"a8f32405-b477-4456-ad54-ed9947af006f\",\n            \"notification\": \"Hello! You have 10 unread messages.\"\n        },\n        {\n            \"id\": \"bd520b32-436a-403d-89ff-afc59fda55b2\",\n            \"user_id\": \"a8f32405-b477-4456-ad54-ed9947af006f\",\n            \"notification\": \"Hello! You have 3 unread messages.\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "New User v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Indra\",\n    \"email\": \"indra@binar.co.id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New User v1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Indra\",\n    \"email\": \"indra@binar.co.id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"81-uyzh6edKElFm6k2+7XowrRiXwPU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:45:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\",\n    \"data\": {\n        \"id\": \"75e2f957-447b-49f1-b27c-7f6fba4b040d\",\n        \"name\": \"Indra\",\n        \"email\": \"indra@binar.co.id\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New User or Replace User v1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Wira\",\n    \"email\": \"wira@binar.co.id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New User or Replace User v1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Wira\",\n    \"email\": \"wira@binar.co.id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"80-VeMB8gNfvtAtjx1+7NS3wHNI+Bg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:47:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation successful\",\n    \"data\": {\n        \"id\": \"75e2f957-447b-49f1-b27c-7f6fba4b040d\",\n        \"name\": \"Wira\",\n        \"email\": \"wira@binar.co.id\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User v1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Wira\",\n    \"email\": \"wira@binar.co.id\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update User v1",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Wira\",\n    \"email\": \"wira@binar.co.id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"80-VeMB8gNfvtAtjx1+7NS3wHNI+Bg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:47:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation successful\",\n    \"data\": {\n        \"id\": \"75e2f957-447b-49f1-b27c-7f6fba4b040d\",\n        \"name\": \"Wira\",\n        \"email\": \"wira@binar.co.id\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete User v1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete User v1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "75e2f957-447b-49f1-b27c-7f6fba4b040d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-qg+IWJaw1MkIouKld5Sd7s+wzBQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 14 Apr 2022 13:48:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Operation succesful\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}

@@ -19,7 +19,7 @@ cd express-restful-api
 npm start
 ```
 
-### Penerapan Best Practice
+## Penerapan Best Practice
 
 1. Tujuan fungsi disesuaikan dengan Method HTTP [referensi](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 * GET: Ambil data
@@ -37,6 +37,21 @@ npm start
 
 3. HTTP Status Response disesuaikan dengan aturan [referensi](https://www.restapitutorial.com/httpstatuscodes.html)
 
-1. Bentuk Response Body konsisten
+4. Bentuk Response Body konsisten
 
-2. Terdapat versioning pada alamat API
+5. Terdapat versioning pada alamat API
+
+## API Route
+| No | Method   | Path                                      | Penjelasan                                                                         |
+|----|----------|-------------------------------------------|------------------------------------------------------------------------------------|
+| 1  | `GET`    | `/api/v1/users`                           | Mengambil semua data user                                                          |
+| 2  | `GET`    | `/api/v2/users?name=&email=&page=&limit=` | Mengambil semua data user dengan filter                                            |
+| 3  | `GET`    | `/api/v1/users/:id`                       | Mengambil 1 data user                                                              |
+| 4  | `GET`    | `/api/v1/users/:id/notifications`         | Mengambil semua data notification milik 1 user                                     |
+| 5  | `POST`   | `/api/v1/users`                           | Membuat 1 user baru                                                                |
+| 6  | `PUT`    | `/api/v1/users/:id`                       | Membuat 1 user baru (jika belum ada) / Mengganti data 1 user lama (jika sudah ada) |
+| 7  | `PATCH`  | `/api/v1/users/:id`                       | Memperbarui data 1 user                                                            |
+| 8  | `DELETE` | `/api/v1/users/:id`                       | Menghapus data 1 user                                                              |
+
+## API Documentation
+Download [postman.json](./docs/postman.json) & import ke postman
