@@ -114,21 +114,49 @@ const putData = (req, res) => {
   // ambil path parameter
   const id = req.params.id;
 
+  // baca request body
+  const name = req.body.name;
+  const email = req.body.email;
+
+  // cek jika request body tidak lengkap
+  if (!name || !email) {
+    return res.status(400).json({
+      message: 'Request body is incomplete',
+    });
+  }
+
   // cari berdasar id
-  const result = users.find((item) => {
+  const index = users.findIndex((item) => {
     return item.id === id;
   });
 
   // jika data tidak ditemukan
-  if(!result) {
-    return res.status(404).json({
-      message: 'User not found'
+  if(index < 0) {
+    // buat data baru
+    const newUser = {
+      id,
+      name,
+      email,
+    }
+
+    // tambah ke array
+    users.push(newUser);
+
+    // berikan response
+    return res.status(201).json({
+      message: 'Operation succesful',
+      data: newUser,
     });
   }
   
+  // perbarui data
+  users[index].name = name;
+  users[index].email = email;
+
   // berikan response
   return res.status(200).json({
-    message: '',
+    message: 'Operation successful',
+    data: users[index],
   });
 };
 
@@ -151,7 +179,7 @@ const patchData = (req, res) => {
   
   // berikan response
   return res.status(200).json({
-    message: '',
+    message: 'Operation successful',
   });
 };
 
