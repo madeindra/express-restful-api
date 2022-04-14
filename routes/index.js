@@ -18,5 +18,7 @@ router.get('/api/v1/users', users.getAllData);
 
 router.post('/api/v1/users', users.postData);
 
+router.get('/api/v2/users', users.getAllDataWithMetadata);
+
 // export router
 module.exports = router;

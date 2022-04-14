@@ -31,49 +31,9 @@ const getSingleData = (req, res) => {
 
 // ambil semua data
 const getAllData = (req, res) => {
-  // ambil query parameter
-  const name = req.query.name;
-  const email = req.query.email;
-  const page = req.query.page || 1; // default page 1
-  const limit = req.query.limit || 10; // default batasi 10 data
-
-  // cek jika filter tidak valid
-  if (page < 1 || limit < 1) {
-    return res.status(400).json({
-      message: 'Filter is invalid',
-    });
-  }
-
-  // salin array agar tidak merubah array users secara langsung 
-  let results = [...users];
-  
-  // jika ada query name, cari berdasar name
-  if (!!name) {
-    results = results.filter((item) => {
-      return item.name.includes(name);
-    });
-  }
-
-  // jika ada query email, cari berdasar email
-  if (!!email) {
-    results = results.filter((item) => {
-      return item.email.includes(email);
-    });
-  }
-
-  // filter berdasar page & limit
-  const minData = (page - 1) * limit;
-  const maxData = page * limit;
-
-  results = results.slice(minData, maxData)
-
-  // selalu berikan response 200 meskipun results kosong, agar bentuk response konsisten
   return res.status(200).json({
     message: 'Operation succesful',
-    data: results,
-    page: page,
-    size: results.length,
-    total: users.length,
+    data: users,
   });
 };
 
@@ -243,7 +203,54 @@ const getUsersNotification = (req, res) => {
     message: 'Operation succesful',
     data: results,
   });
-}
+};
+
+const getAllDataWithMetadata = (req, res) => {
+  // ambil query parameter
+  const name = req.query.name;
+  const email = req.query.email;
+  const page = req.query.page || 1; // default page 1
+  const limit = req.query.limit || 10; // default batasi 10 data
+
+  // cek jika filter tidak valid
+  if (page < 1 || limit < 1) {
+    return res.status(400).json({
+      message: 'Filter is invalid',
+    });
+  }
+
+  // salin array agar tidak merubah array users secara langsung 
+  let results = [...users];
+  
+  // jika ada query name, cari berdasar name
+  if (!!name) {
+    results = results.filter((item) => {
+      return item.name.includes(name);
+    });
+  }
+
+  // jika ada query email, cari berdasar email
+  if (!!email) {
+    results = results.filter((item) => {
+      return item.email.includes(email);
+    });
+  }
+
+  // filter berdasar page & limit
+  const minData = (page - 1) * limit;
+  const maxData = page * limit;
+
+  results = results.slice(minData, maxData)
+
+  // selalu berikan response 200 meskipun results kosong, agar bentuk response konsisten
+  return res.status(200).json({
+    message: 'Operation succesful',
+    data: results,
+    page: page,
+    size: results.length,
+    total: users.length,
+  });
+};
 
 module.exports = {
   getSingleData,
@@ -253,4 +260,5 @@ module.exports = {
   patchData,
   deleteData,
   getUsersNotification,
+  getAllDataWithMetadata,
 }
