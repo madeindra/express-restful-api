@@ -165,21 +165,35 @@ const patchData = (req, res) => {
   // ambil path parameter
   const id = req.params.id;
 
+  // baca request body
+  const name = req.body.name;
+  const email = req.body.email;
+
   // cari berdasar id
-  const result = users.find((item) => {
+  const index = users.findIndex((item) => {
     return item.id === id;
   });
 
   // jika data tidak ditemukan
-  if(!result) {
+  if(index < 0) {
     return res.status(404).json({
       message: 'User not found'
     });
   }
+
+  // perbarui data secara kondisional
+  if (!!name) {
+    users[index].name = name;
+  }
   
+  if (!!email) {
+    users[index].email = email;
+  }
+
   // berikan response
   return res.status(200).json({
     message: 'Operation successful',
+    data: users[index],
   });
 };
 
