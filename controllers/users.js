@@ -209,8 +209,10 @@ const getAllDataWithMetadata = (req, res) => {
   // ambil query parameter
   const name = req.query.name;
   const email = req.query.email;
-  const page = req.query.page || 1; // default page 1
-  const limit = req.query.limit || 10; // default batasi 10 data
+
+  // ambil dari query & ubah tipe data menjadi Number (memastikan bisa digunakan untuk operasi matematis)
+  const page = Number(req.query.page) || 1; // default page 1
+  const limit = Number(req.query.limit) || 10; // default batasi 10 data
 
   // cek jika filter tidak valid
   if (page < 1 || limit < 1) {
